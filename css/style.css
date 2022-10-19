@@ -23,6 +23,7 @@ body{
     top: 0;
     width: 100%;
     z-index: 1;
+    border-bottom: 1px solid rgb(61 54 54/25%);
 }
 
 .tomato{
@@ -34,7 +35,8 @@ body{
     justify-content: space-between;
     align-items: center;
     /* background-color: beige; */
-    margin: 0 10%;
+   width: 80%;
+   margin: 10px auto;
 }
 
 .Ulist{
@@ -67,6 +69,36 @@ body{
     font-weight: 600;
     letter-spacing:0.3px;
 }
+/* #ham , #cross,.hamCross{
+    display: none;
+} */
+.hamCross i{
+    /* background-color: aqua; */
+    font-size: 25px;
+   
+    /* width: 100px;
+    height: 100px; */
+}
+
+.wrapdiv{
+    /* background-color: aqua; */
+    width: 100%;
+}
+
+.wrapbar{
+    /* background-color: rgb(246, 238, 238); */
+   width: 85%;
+   margin: auto;
+   
+}
+.wlist{
+    padding: 0;
+}
+.wlist list a{
+    margin: 10px 0px;
+  
+}
+
 
 #home{
     position: relative;
@@ -124,7 +156,7 @@ top: 101%;
 left: 0;
 }
 
-.homeLeft:hover, .homeRight:hover {
+.homeLeft:hover, .homeRight:hover{
     color: tomato;
 }
 .slide{
@@ -418,28 +450,45 @@ left: 0;
     :root{
         --iconfont:23px;
     }
-
+    .hamCross {
+        display: block;
+    }
     .solufont i{
         padding: 15px;
     }
     .Ulist{
       
-        visibility: hidden;
-       
-       
+        display: none; 
     }  
     .soltxt{
         font-size: 15px;
     }
     .solu div{
         margin: 30px 0px;
-        
-        
+          
     }
+   
     .portflx{
         flex-wrap: wrap;
     }
 
+}
+
+@media only screen and (min-width:801px) {
+    .hamCross{
+        display: none;
+    }
+    /* .Ulist{
+      
+        display: block; 
+    } */
+    /* .footer{
+        background-color: rgb(190, 27, 27);
+    } */
+   
+    .wrapdiv{
+        display: none;
+    }
 }
 
 @media only screen and (max-width:500px) {
