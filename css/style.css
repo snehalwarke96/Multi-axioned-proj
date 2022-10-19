@@ -1,0 +1,495 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Dancing+Script&family=Lato&family=Libre+Baskerville&family=Open+Sans:ital,wght@0,300;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins&family=Roboto:wght@300&family=Signika+Negative&family=Source+Sans+Pro&family=Tapestry&display=swap');
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root{
+    --most-used-color: tomato;
+    --font-color: black;
+    --slide: rgb(183, 178, 178);
+    --paraFont: 14px;
+    --iconfont:30px;
+    --widthCont:80%
+}
+
+.header{
+    background-color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.tomato{
+    color: var(--most-used-color);
+}
+
+.headCont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: beige; */
+    margin: 0 10%;
+}
+
+.Ulist{
+    display: flex;   
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing:0.3px;
+   
+}
+
+.list{
+    margin: 10px 20px;
+    list-style: none;
+}
+
+.list a ,.logo a{
+    color: var(--font-color);
+    text-decoration: none;
+    padding: 10px;
+}
+
+.list  :hover{
+    color: var(--most-used-color);
+    
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing:0.3px;
+}
+
+#home{
+    position: relative;
+    width: 100%;
+    height: 95vh;
+    background-image: url(../assets/slider/1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed ;
+    /* height: 90vw; */
+    /* position: absolute; */
+    /* background-color: yellow; */
+}
+
+.homeLeft{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    color: var(--slide);
+}
+.homeRight{
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    color: var(--slide);
+}
+
+.invert{
+    /* filter: invert(); */
+   
+    font-size: 40px;
+    opacity: 0.6;
+    cursor: pointer;
+    
+}
+
+.homeSlide{
+    /* position: absolute; */
+    /* top: 50%;
+    left: 50%;
+    translate: (-50%,-50%); */
+
+    /* background-color: aqua; */
+    text-align: center;
+    /* width: 100px; */
+}
+
+.homeMedl{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+/* background-color: brown; */
+top: 101%;
+left: 0;
+}
+
+.homeLeft:hover, .homeRight:hover {
+    color: tomato;
+}
+.slide{
+    padding: 1px 10px;
+    border: 1px solid var(--slide);
+    background-color:var(--slide);
+    border-radius: 50%;
+    margin: 5px;
+}
+.slide:hover{
+    cursor: pointer;
+    border: 1px solid var(--most-used-color);
+    background-color:var(--most-used-color); 
+}
+
+#services{
+    position: relative;
+    height: auto;
+    /* background-color: aqua; */
+    margin-top: 80px;
+}
+
+.serHeading{
+    text-align: center;
+    text-transform: capitalize;
+    
+}
+
+.serSol, .portflx{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: var(--widthCont);
+    margin: auto;
+  
+}
+
+.solu, .portFlex{
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    justify-content: space-between;
+    /* width: 80%; */
+    
+}
+.solu div{
+    margin: 50px 0px;
+    
+    
+}
+
+.solufont i{
+    text-align: center;
+    font-size: var(--iconfont);
+    color: white;
+    border-radius: 50%;
+    padding: 23px ;
+   background-color: var(--most-used-color);
+    border: 2px solid var(--most-used-color);
+}
+
+.solufont i:hover{
+    background-color: white;
+    cursor: pointer;
+    color: var(--most-used-color);
+}
+
+.soltxt{
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+
+#blog{
+    position: relative;
+    height: auto;
+}
+
+.blogHead{
+    text-align: center;
+    width: var(--widthCont);
+    margin: auto;
+}
+
+
+.blogFlex{
+    display: flex;
+    width: var(--widthCont);
+    margin: auto;
+    /* background-color: aqua; */
+    justify-content: space-around; 
+    align-items: center;
+    margin-top: 100px 0px;
+}
+
+.blogIcon{
+  
+    display: flex;
+    width: var(--widthCont);
+    margin: 100px auto;
+    justify-content: space-between; 
+    align-items: center;
+    /* flex-wrap: wrap; */
+    /* background-color: aqua; */
+}
+.blogImg img{
+    width: 90%;
+    /* background-color: aqua; */
+}
+
+.blog1{
+    display: flex;
+    width: 28%;
+   
+    /* justify-content: center; */
+    
+}
+
+.blog1 .solufont{
+    margin: 5px;
+}
+
+.blogPur{
+    background-color: var(--most-used-color);
+    
+    position: relative;
+    height: 250px;
+}
+
+.blogPurCont{
+    position: absolute;
+    width: 80%;
+    top: 16%;
+    left: 10%;
+    
+    /* background-color: aqua; */
+}
+
+.blogPurCont h3, .blogPurCont p, .blogBtn{
+    text-align: center;
+}
+.blogBtn{
+    margin: auto;
+    /* background-color: aqua; */
+    width: 100%;
+    height: 50px;
+}
+.blogBtn button{
+    padding: 8px;
+    margin: 4px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 5px 5px 0px rgb(0 0 0/ 25%);
+    transition: all 0.4s ease-in;
+   
+}
+.blogBtn  :hover{
+   background-color: rgb(200, 192, 192);
+   cursor: pointer;
+   transform:translateY(2px);
+}
+
+#portfolio{
+    position: relative;
+    margin-top: 100px;
+    height: auto;
+}
+#contact{
+    background-color: rgb(52, 50, 50);
+    margin-top: 80px;
+    color: white;
+    
+}
+
+.contCont{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    /* background-color: aqua; */
+    width: var(--widthCont);
+    margin: auto;
+
+}
+
+.contCont div{
+    width: 28%;
+}
+
+.postP{
+    /* opacity: 0.6; */
+    padding-bottom: 8px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.296);
+}
+
+.multi p, .opcty{
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+
+.conIcon i{
+    color: white;
+   
+}
+.footer{
+    background-color: black;
+}
+
+.foot{
+    /* background-color: black; */
+    color: white;
+    /* background-color: aqua; */
+    display: flex;
+    width: var(--widthCont);
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.conIcon  :hover, .postP i:hover{
+ color: var(--most-used-color);
+    cursor: pointer;
+   
+}
+
+.footlist{
+    display: flex;
+    padding: 5px;
+    margin: 0;
+    cursor: pointer;
+    
+}
+
+
+
+
+
+
+.Flist{
+    margin: 10px 20px;
+    list-style: none;
+}
+
+.Flist a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+.Flist a:hover{
+    color: var(--most-used-color);
+}
+
+.blogPara, .postP{
+    font-size: var(--paraFont);
+}
+
+
+
+
+@media only screen and (max-width:1050px) {
+    :root{
+        --widthCont:90%
+    }
+ 
+
+}
+
+@media only screen and (max-width:930px) {
+    .foot{
+        flex-wrap: wrap-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    :root{
+        --paraFont: 13px;
+    }
+    .Ulist{
+      
+        font-size: 14px;
+       
+       
+    }   
+}
+
+@media only screen and (max-width:800px) {
+    :root{
+        --iconfont:23px;
+    }
+
+    .solufont i{
+        padding: 15px;
+    }
+    .Ulist{
+      
+        visibility: hidden;
+       
+       
+    }  
+    .soltxt{
+        font-size: 15px;
+    }
+    .solu div{
+        margin: 30px 0px;
+        
+        
+    }
+    .portflx{
+        flex-wrap: wrap;
+    }
+
+}
+
+@media only screen and (max-width:500px) {
+    :root{
+        --iconfont:18px;
+    }
+
+    .solufont i{
+        padding: 10px;
+    }
+    .soltxt{
+        font-size: 12px;
+    }
+    .solu div{
+        margin: 10px 0px;
+        
+        
+    }
+    .serSol{
+     flex-wrap: wrap;
+
+    }
+
+    .blog1{
+        width: 80%;
+        margin: auto;  
+    }
+
+    .blogIcon{
+        margin: 30px auto;
+    }
+
+
+    .blogIcon,.contCont{
+flex-direction: column;
+align-items: center;
+
+    }
+    .contCont div{
+        width: 80%;
+    }
+    .footlist{
+        display: none;
+    }
+    .foot{
+        padding: 3px;
+    }
+    .blogPara{
+        font-size: 10px;
+    }
+ 
+
+}
